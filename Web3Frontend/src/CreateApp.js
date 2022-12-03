@@ -43,16 +43,12 @@ function CreateApp() {
   const selectCategory = (event) => {
     typeChangeHandler(event);
     const typeSelected = typeData.filter(type => {
-      if (type.Type === event.target.value) {
-        return type;
-      }
+      return type.Type === event.target.value;
     })
     let categoryDataToshow = [];
     categoryDataToshow = categoryData.filter(category => {
-      if (category.TypeId === typeSelected[0].TypeId) {
-        return category
-      }
-    },)
+      return category.TypeId === typeSelected[0].TypeId;
+    })
     setCategoryDataToDisplay(categoryDataToshow);
   };
   var formdata = new FormData();
