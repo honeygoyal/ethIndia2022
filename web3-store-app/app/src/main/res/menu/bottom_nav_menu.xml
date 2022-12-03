@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/app_ns"
+        android:title="@string/title_apps" />
+
+    <item
+        android:id="@+id/navigation_dashboard"
+        android:icon="@drawable/games_ns"
+        android:title="@string/title_games" />
+
+    <item
+        android:id="@+id/navigation_notifications"
+        android:icon="@drawable/comics_ns"
+        android:title="@string/title_comics" />
+
+</menu>
