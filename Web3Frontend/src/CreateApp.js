@@ -218,10 +218,7 @@ function CreateApp() {
                   <option value="paid">Paid</option>
                 </Form.Select>
               </Form.Group>
-              <Form.Group controlId="formCoverImage" className="mb-3">
-                <Form.Label>Cover Image</Form.Label>
-                <Form.Control accept='image/png, image/jpg, image/jpeg' required value={coverImage} onChange={coverImageChangeHandler} type="file" />
-              </Form.Group>
+             
               <Form.Group controlId="formScreenshots" className="mb-3">
                 <Form.Label>Screenshot Image</Form.Label>
                 <Form.Control accept='image/png, image/jpg, image/jpeg' required value={screenshot} onChange={screenshotChangeHandler} type="file" multiple="true" />
