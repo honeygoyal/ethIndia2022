@@ -1,0 +1,4 @@
+{
+    "CREATE_APP_URL":"http://localhost:8080/create",
+    "IS_DEVELOPER_URL":"https://adcb-103-186-40-179.in.ngrok.io/index/isDeveloper"
+}

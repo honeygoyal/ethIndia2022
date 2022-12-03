@@ -1,0 +1,38 @@
+.createAppForm {
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, #04fafd, 5%, #119dff, 50%, #030423);
+  /* width */
+
+}
+
+.formContent {
+  height: 70vh;
+  overflow-y: scroll;
+  column-count: 2;
+}
+
+.title {
+  text-align: center;
+}
+
+.formContent::-webkit-scrollbar {
+  width: 5px;
+  display: none;
+}
+
+/* Track */
+.formContent::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 5px;
+  display: none;
+}
+
+/* Handle */
+.formContent::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #04fafd, 5%, #119dff, 50%, #030423);
+  border-radius: 10px;
+}
