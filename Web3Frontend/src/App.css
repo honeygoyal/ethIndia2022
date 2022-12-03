@@ -1,0 +1,37 @@
+.content {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.headerContainer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menuOptions {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+
+}
+
+.links {
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+
+}
+
+.links:hover {
+  color: rgb(207, 190, 190);
+}
+
+.modal-90w {
+  width: 90% !important;
+}
