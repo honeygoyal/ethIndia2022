@@ -1,0 +1,21 @@
+version: '3.6'
+services:
+  eth-web3-nodejs:
+    build:
+      context: .
+      target: dev
+    container_name: eth-web3-nodejs
+    image: 'eth-web3-nodejs'
+    volumes:
+      - .:/src
+    command: npm start
+    restart: unless-stopped
+    # env_file: environments/.env-sample
+    ports:
+      - "8000:8000"
+    networks: 
+      - eth-web3-nodejs
+
+networks:
+  eth-web3-nodejs:
+    name: eth-web3-nodejs
