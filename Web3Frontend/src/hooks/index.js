@@ -1,16 +1,12 @@
-// hooks/index.ts
-
 import { ethers } from "ethers";
 import { useCallback, useState } from 'react'
 import { usePromiseTransaction } from '@usedapp/core/dist/esm/src/hooks/usePromiseTransaction'
 import { Contract } from "@ethersproject/contracts";
-import { useContractCall,ContractCall } from "@usedapp/core";
+import { useContractCall } from "@usedapp/core";
 import simpleContractAbi from "../abi/PlayStore.json";
 import { simpleContractAddress } from "../contracts";
 
-import { Web3Provider } from '@ethersproject/providers';
-import { TransactionOptions, useEthers } from '@usedapp/core';
-import { Signer } from '@ethersproject/abstract-signer';
+import { useEthers } from '@usedapp/core';
 
 const simpleContractInterface = new ethers.utils.Interface(simpleContractAbi);
 const provider = new ethers.providers.Web3Provider(window.ethereum)
@@ -37,7 +33,7 @@ export const useContractFunction = (
   options,
 ) => {
   const { library, chainId } = useEthers()
-  const [events, setEvents] = useState(
+  const [, setEvents] = useState(
     undefined
   )
   const [receipt,setReceipt] = useState(undefined);

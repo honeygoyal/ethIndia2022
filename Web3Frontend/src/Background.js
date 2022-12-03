@@ -1,7 +1,5 @@
-import React, { Component } from 'react'
+import React from 'react'
 import './Background.css';
-import Form from 'react-bootstrap/Form';
-import { Button } from 'react-bootstrap';
 function Background() {
   return (
     <div class="wrapper">

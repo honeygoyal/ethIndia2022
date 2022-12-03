@@ -1,4 +1,4 @@
 {
-    "CREATE_APP_URL":"http://localhost:8080/create",
+    "CREATE_APP_URL":"http://54.249.38.16:8080/create",
     "IS_DEVELOPER_URL":"http://54.249.38.16:8000/index/isDeveloper"
 }

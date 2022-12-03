@@ -2,7 +2,6 @@
 import './App.css';
 import React, { useState,useEffect } from 'react';
 import '@rainbow-me/rainbowkit/styles.css';
-import { defaultLayoutPlugin } from '@react-pdf-viewer/default-layout';
 import '@react-pdf-viewer/core/lib/styles/index.css';
 import '@react-pdf-viewer/default-layout/lib/styles/index.css';
 import axios from 'axios';
@@ -52,8 +51,7 @@ const wagmiClient = createClient({
 
 
 function App() {
-  const defaultLayoutPluginInstance = defaultLayoutPlugin();
-  const { address, connector: activeConnector, isConnected } = useAccount();
+  const { address, isConnected } = useAccount();
   const [paymentStatus, setPaymentStatus] = useState(false);
   const [isDeveloper, setIsDeveloper] = useState(false);
   const [showAppForm,setShowAppForm] = useState(false);
@@ -70,7 +68,7 @@ function App() {
         setIsDeveloper(res);
         setPaymentStatus(res);
       })
-      .catch((err) => {
+      .catch(() => {
       });
     }
   }, [address])
