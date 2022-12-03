@@ -29,6 +29,7 @@ import Payment from './Payment';
 import Welcome from './Welcome';
 import AppIntro  from './AppIntro';
 import CreateApp from './CreateApp';
+import propsData from './prop.json'
 const { chains, provider } = configureChains(
   [chain.mainnet, chain.goerli, chain.polygon, chain.optimism, chain.arbitrum,chain.polygonMumbai],
   [
@@ -59,7 +60,7 @@ function App() {
   useEffect(() => {
     if(address !== undefined){
       axios
-      .post("https://adcb-103-186-40-179.in.ngrok.io/index/isDeveloper", 
+      .post(propsData.IS_DEVELOPER_URL, 
        {
           "address": address
         }
