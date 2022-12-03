@@ -29,15 +29,15 @@ function CreateApp() {
     { categoryName: 'Offline', TypeId: '1' },
     { categoryName: 'Action', TypeId: '1' },
     { categoryName: 'Puzzle', TypeId: '1' },
-    { categoryName: 'Supply_Chain ', TypeId: '2' },
-    { categoryName: 'Social_Media ', TypeId: '2' },
+    { categoryName: 'Supply Chain', TypeId: '2' },
+    { categoryName: 'Social Media', TypeId: '2' },
     { categoryName: 'NFT', TypeId: '2' },
-    { categoryName: 'Defi ', TypeId: '2' },
-    { categoryName: 'Trading ', TypeId: '2' },
-    { categoryName: 'Super_Hero ', TypeId: '3' }
-    { categoryName: 'Manga', TypeId: '3' }
-    { categoryName: 'SCI_FI ', TypeId: '3' }
-    { categoryName: 'Horror ', TypeId: '3' }
+    { categoryName: 'Defi', TypeId: '2' },
+    { categoryName: 'Trading', TypeId: '2' },
+    { categoryName: 'Super Hero', TypeId: '3' },
+    { categoryName: 'Manga', TypeId: '3' },
+    { categoryName: 'Sci Fi', TypeId: '3' },
+    { categoryName: 'Horror', TypeId: '3' },
     { categoryName: 'Humor', TypeId: '3' }
   ];
   const [categoryDataToDisplay, setCategoryDataToDisplay] = useState([]);
