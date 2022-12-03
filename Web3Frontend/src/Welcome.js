@@ -19,7 +19,7 @@ function Welcome() {
           <Form.Group className="mb-4" controlId="formBasicEmail">
             <Form.Label className='labelTitle'>Developer Name</Form.Label>
             <Form.Control type="text" placeholder="Enter Developer Name" />
-          </Form.Group>b                                                    
+          </Form.Group>                                                    
           <Form.Group className="mb-3" controlId="formBasicCheckbox">
             <Form.Check type="checkbox" label="Accept Terms and Conditions" />
           </Form.Group>
