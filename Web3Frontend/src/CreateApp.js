@@ -24,9 +24,21 @@ function CreateApp() {
     { Type: 'Comics', TypeId: '3' }
   ];
   const categoryData = [
-    { categoryName: 'ABC', TypeId: '1' },
-    { categoryName: 'DEF ', TypeId: '2' },
-    { categoryName: 'GHI ', TypeId: '3' }
+    { categoryName: 'Multiplayer', TypeId: '1' },
+    { categoryName: 'Realistic', TypeId: '1' },
+    { categoryName: 'Offline', TypeId: '1' },
+    { categoryName: 'Action', TypeId: '1' },
+    { categoryName: 'Puzzle', TypeId: '1' },
+    { categoryName: 'Supply_Chain ', TypeId: '2' },
+    { categoryName: 'Social_Media ', TypeId: '2' },
+    { categoryName: 'NFT', TypeId: '2' },
+    { categoryName: 'Defi ', TypeId: '2' },
+    { categoryName: 'Trading ', TypeId: '2' },
+    { categoryName: 'Super_Hero ', TypeId: '3' }
+    { categoryName: 'Manga', TypeId: '3' }
+    { categoryName: 'SCI_FI ', TypeId: '3' }
+    { categoryName: 'Horror ', TypeId: '3' }
+    { categoryName: 'Humor', TypeId: '3' }
   ];
   const [categoryDataToDisplay, setCategoryDataToDisplay] = useState([]);
   const selectCategory = (event) => {
