@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import './Payment.css';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';

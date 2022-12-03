@@ -1,12 +1,11 @@
-import React, { Component } from 'react'
+import React from 'react'
 import './Welcome.css';
 import Form from 'react-bootstrap/Form';
 import { Button } from 'react-bootstrap';
-import Payment from './Payment';
 import { useContractMethod } from "./hooks";
 function Welcome() {
 
-  const { state: Payment, send: setPayment,receipt } =
+  const { send: setPayment } =
     useContractMethod("pay");
   function handlePayment(event) {
     event.preventDefault();

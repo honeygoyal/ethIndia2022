@@ -1,4 +1,4 @@
-import React, { Component, useState } from 'react'
+import React, { useState } from 'react'
 import './CreateApp.css';
 import swal from 'sweetalert';
 import axios from 'axios';
@@ -10,12 +10,11 @@ import propsData from './prop.json'
 import { useContractMethod } from "./hooks";
 function CreateApp() {
 
-  const { state: create, send: setCreate,receipt } =
+  const { send: setCreate,receipt } =
     useContractMethod("create");
 
     
   const [apkFiles, setApkFiles] = useState();
-  const [coverImageFiles, setCoverImageFiles] = useState();
   const [appIconFiles, setAppIconFiles] = useState();
   const [screenshotFiles, setScreenshotFiles] = useState([]);
   const typeData = [
@@ -44,7 +43,7 @@ function CreateApp() {
   const selectCategory = (event) => {
     typeChangeHandler(event);
     const typeSelected = typeData.filter(type => {
-      if (type.Type == event.target.value) {
+      if (type.Type === event.target.value) {
         return type;
       }
     })
@@ -53,7 +52,7 @@ function CreateApp() {
       if (category.TypeId === typeSelected[0].TypeId) {
         return category
       }
-    })
+    },)
     setCategoryDataToDisplay(categoryDataToshow);
   };
   var formdata = new FormData();
@@ -96,7 +95,6 @@ function CreateApp() {
     setCategory('')
     setAppIcon('')
     setSubscriptionType('')
-    setCoverImage('')
     setScreenshot('')
     setApkFile('')
   }
@@ -108,7 +106,6 @@ function CreateApp() {
   const [category, setCategory] = useState('');
   const [appIcon, setAppIcon] = useState('');
   const [subscription, setSubscriptionType] = useState('');
-  const [coverImage, setCoverImage] = useState('');
   const [screenshot, setScreenshot] = useState('');
   const [apkFile, setApkFile] = useState('');
 
@@ -123,10 +120,6 @@ function CreateApp() {
     let files = [event.target.files[0], event.target.files[1], event.target.files[2]]
     setScreenshotFiles(files);
     setScreenshot(event.target.value);
-  };
-  const coverImageChangeHandler = (event) => {
-    setCoverImageFiles(event.target.files[0]);
-    setCoverImage(event.target.value);
   };
   const subscriptionChangeHandler = (event) => {
     setSubscriptionType(event.target.value);
